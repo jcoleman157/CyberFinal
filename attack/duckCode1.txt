@@ -1,0 +1,17 @@
+REM Script numbter 1
+REM possibly the most malisios thing I have ever done ever
+REM force leauge install
+DELAY 1000
+GUI r
+DELAY 500
+STRING https://signup.leagueoflegends.com/en-us/signup/redownload
+DELAY 1000
+ENTER
+DELAY 2000
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
