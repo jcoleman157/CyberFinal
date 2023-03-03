@@ -1,4 +1,4 @@
-# credits to, i stole this code on stack overflow nosklo
+# credits to, (i stole this code on stack overflow) nosklo
 # https://stackoverflow.com/questions/53913408/how-to-disable-enable-a-specific-usb-port-in-windows-with-python
 
 import subprocess
