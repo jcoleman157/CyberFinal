@@ -1,0 +1,9 @@
+HID\INTC816&COL01\3&36043C54&0&0000
+    Name: HID Keyboard Device
+    Hardware IDs:
+        HID\INTC816&Col01
+        HID\VID_8087&UP:0001_U:0006
+        HID_DEVICE_SYSTEM_KEYBOARD
+        HID_DEVICE_UP:0001_U:0006
+        HID_DEVICE
+1 matching device(s) found.

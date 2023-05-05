@@ -1,10 +1,9 @@
 import subprocess
 
 # Define the command you want to execute
-cmd_code = 'ipconfig'
+cmd_code = '"C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon" hwids *hid*keyboard* > "C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\hwid_trust.txt"'
 
-# Use subprocess to execute the devcon command
-output = subprocess.Popen(cmd_code, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+# output = subprocess.Popen(cmd_code)
 
-# Print the output of the devcon command
-print(output)
+subprocess.run(cmd_code, shell=True)
+ 
