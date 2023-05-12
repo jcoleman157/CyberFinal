@@ -13,6 +13,7 @@ def checkWithWrite():
     # output = subprocess.Popen(cmd_code)
 
     subprocess.run(cmd_code, shell=True)
+
 def check():
     cmd_code = '"C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon" hwids *hid*keyboard* > "C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon_hid.txt"'
 
@@ -29,11 +30,9 @@ def enableHID():
     subprocess.run(en_code, shell=True)
     print("We back with da keyboards \n")
 
-time.sleep(10) #snoozez the program
-
 def readFile():
     with open('hwid_trust.txt') as j:
         lines = j.readlines()
         if lines.__contains__('Name'):
-            a.append(j.readline() - 1)
+            a.append('hwid_trust.txt', j - 1)
     print(a)
