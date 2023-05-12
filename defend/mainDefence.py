@@ -4,4 +4,4 @@
 from testingThingy import *
 
 
-readFile()
+readFileTrust()

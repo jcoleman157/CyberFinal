@@ -4,15 +4,9 @@
 
 import subprocess
 import time
-a = []
-
-def checkWithWrite():
-    # Define the command you want to execute
-    cmd_code = '"C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon" hwids *hid*keyboard* > "C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\hwid_trust.txt"'
-
-    # output = subprocess.Popen(cmd_code)
-
-    subprocess.run(cmd_code, shell=True)
+import linecache
+fileNon = open('CyberFinal\defend\devcon_hid.txt')
+fileTrust = open('CyberFinal\defend\hwid_trust.txt', "w")
 
 def check():
     cmd_code = '"C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon" hwids *hid*keyboard* > "C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon_hid.txt"'
@@ -30,9 +24,15 @@ def enableHID():
     subprocess.run(en_code, shell=True)
     print("We back with da keyboards \n")
 
-def readFile():
-    with open('hwid_trust.txt') as j:
-        lines = j.readlines()
-        if lines.__contains__('Name'):
-            a.append('hwid_trust.txt', j - 1)
-    print(a)
+def readFileTrust():
+    check()
+    count = 0
+    fileTrust.truncate(0)
+    for line in fileNon.readlines():
+        print(line)
+        if 'Name' in line:
+            fileTrust.write(linecache.getline("CyberFinal\defend\devcon_hid.txt", count))
+            print('We got into this if statement!')
+        count = count + 1
+
+readFileTrust()
