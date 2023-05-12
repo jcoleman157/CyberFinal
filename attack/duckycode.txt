@@ -1,0 +1,12 @@
+REM this is how comments work!
+REM wait 1 second after start
+DELAY 1000
+REM windows plus r
+GUI r
+DELAY 100
+REM types windows + R
+STRING notepad.exe
+REM Enter button
+ENTER
+DELAY 300
+STRING you have been hacked!
