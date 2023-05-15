@@ -1,12 +1,3 @@
-HID\VID_03F0&PID_034A&MI_00\7&2AB789E1&0&0000
-    Name: HID Keyboard Device
-    Hardware ID's:
-        HID\VID_03F0&PID_034A&REV_0121&MI_00
-        HID\VID_03F0&PID_034A&MI_00
-        HID\VID_03F0&UP:0001_U:0006
-        HID_DEVICE_SYSTEM_KEYBOARD
-        HID_DEVICE_UP:0001_U:0006
-        HID_DEVICE
 HID\INTC816&COL01\3&36043C54&0&0000
     Name: HID Keyboard Device
     Hardware ID's:
@@ -15,4 +6,4 @@ HID\INTC816&COL01\3&36043C54&0&0000
         HID_DEVICE_SYSTEM_KEYBOARD
         HID_DEVICE_UP:0001_U:0006
         HID_DEVICE
-2 matching device(s) found.
+1 matching device(s) found.

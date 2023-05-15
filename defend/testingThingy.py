@@ -6,7 +6,11 @@ import subprocess
 import time
 import linecache
 fileNon = open('CyberFinal\defend\devcon_hid.txt')
-fileTrust = open('CyberFinal\defend\hwid_trust.txt', "w")
+fileTrustWrite = open('CyberFinal\defend\hwid_trust.txt', "w")
+fileTrustRead = open('CyberFinal\defend\hwid_trust.txt')
+fileDisableRead = open('CyberFinal\defend\devcon_disable.txt')
+fileDisableWrite = open('CyberFinal\defend\devcon_disable.txt', 'w')
+
 
 def check():
     cmd_code = '"C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon" hwids *hid*keyboard* > "C:\\Users\\JColeman2023\\OneDrive - amsacs.org\\Documents\\rubberDuckyShnanaganery\\CyberFinal\\defend\\devcon_hid.txt"'
@@ -24,15 +28,27 @@ def enableHID():
     subprocess.run(en_code, shell=True)
     print("We back with da keyboards \n")
 
-def readFileTrust():
+def readFileDisable(path):
     check()
     count = 0
-    fileTrust.truncate(0)
+    fileTrustWrite.truncate(0)
     for line in fileNon.readlines():
         print(line)
         if 'Name' in line:
-            fileTrust.write(linecache.getline("CyberFinal\defend\devcon_hid.txt", count))
+            fileTrustWrite.write(linecache.getline("CyberFinal\defend\devcon_hid.txt", count))
             print('We got into this if statement!')
         count = count + 1
 
-readFileTrust()
+def checkIfThere():
+    count = 0
+    data = fileTrustRead.readlines()
+    readFileDisable(fileDisableRead)
+    disable = fileDisableRead.readlines()
+    for i in disable:
+        for j in data:
+            if i == j:
+                disable.remove(count)
+                count = count + 1
+    fileDisableWrite.writelines(data)
+
+checkIfThere()
