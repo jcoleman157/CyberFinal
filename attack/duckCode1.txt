@@ -1,6 +1,6 @@
-REM Script numbter 1
-REM possibly the most malisios thing I have ever done ever
-REM force leauge install
+REM Script number 1
+REM possibly the most malicious thing I have ever done ever
+REM force league install
 DELAY 1000
 GUI r
 DELAY 500
